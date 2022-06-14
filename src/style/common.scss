@@ -1,0 +1,20 @@
+.w{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  min-width: 960px;
+}
+
+body{
+  padding-bottom: 65px;
+}
+
+// dialog弹窗 禁止滚动
+.popup-parent--hidden{
+  overflow: hidden
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
