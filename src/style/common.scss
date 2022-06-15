@@ -18,3 +18,17 @@ body{
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
+
+
+body::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  background-color:rgba(0,0,0,0.3);
+  outline:none;
+  border-radius:5px
+}
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  background: transparent;
+}

@@ -61,18 +61,19 @@
 
 <script setup lang="ts">
 import {mapState, useStore} from 'vuex'
-import {computed, onMounted, ref} from "vue";
+import {computed, nextTick, onMounted, ref} from "vue";
 import homeStore from "@/router/home";
 import {getCommonNet, getHotSearch} from "@/api/api";
 import {ElMessage} from "element-plus"; // 引入useStore 方法
 const store = useStore()  // 该方法用于返回store 实例
 
-onMounted(() => {
+const rankLevel = computed(() => store.state.homeStore.rankLevel)
+const userInfo = computed(() => store.state.loginStore.userInfo)
+
+nextTick(() => {
   store.dispatch('getUserRankLevel');
 })
 
-const rankLevel = computed(() => store.state.homeStore.rankLevel)
-const userInfo = computed(() => store.state.loginStore.userInfo)
 
 const hotSearch = ref()
 const commonNet = ref()

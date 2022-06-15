@@ -36,7 +36,7 @@ service.interceptors.request.use(
 
         ElMessage({
             showClose: true,
-            message: error,
+            message: '啊哦！服务器跑路了。',
             type: 'error'
         })
         return error
