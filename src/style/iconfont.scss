@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3401478 */
-  src: url('@/assets/font/iconfont.woff2?t=1652797828471') format('woff2'),
-       url('@/assets/font/iconfont.woff?t=1652797828471') format('woff'),
-       url('@/assets/font/iconfont.ttf?t=1652534715215') format('truetype');
+  src: url('iconfont.woff2?t=1656333229761') format('woff2'),
+       url('iconfont.woff?t=1656333229761') format('woff'),
+       url('iconfont.ttf?t=1656333229761') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shanchu:before {
+  content: "\e718";
+}
+
+.icon-bianji:before {
+  content: "\e65e";
 }
 
 .icon-Close:before {
@@ -36,5 +44,4 @@
 .icon-message:before {
   content: "\e600";
 }
-
 
