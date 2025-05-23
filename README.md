@@ -1,3 +1,5 @@
+
+[https://wanandroid.iichen.cn/#/home](预览地址)
 ### 路由相关记录
  - 对于页面一些条件判断 跳转、显示等路由条件，可以将条件定义在 路由的 meta属性 => $route.meta.xxx
  - params参数 ： path:'detail/:id/:title' 必填
